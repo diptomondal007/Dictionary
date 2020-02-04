@@ -37,7 +37,7 @@ func (d Dictionary) Delete(word string) (string ,error) {
 
 func (d Dictionary) Search(word string) (string , error){
 	if definition, ok := d[word];ok{
-		return fmt.Sprintf("%v",definition),nil
+		return definition,nil
 	}else {
 		return word,fmt.Errorf("sorry %v not found",word)
 	}
