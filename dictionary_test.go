@@ -88,7 +88,7 @@ func TestDictionary_Search(t *testing.T) {
 	}
 }
 
-func TestDictionary_SearchFiled(t *testing.T) {
+func TestDictionary_SearchFailed(t *testing.T) {
 	var dict  = New()
 	_ ,err :=dict.Search("apple")
 	if err == nil {
